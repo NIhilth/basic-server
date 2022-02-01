@@ -16,9 +16,11 @@ inserirRota('/teste_criar_tabela', (dados, resposta) => {
         NOME varchar(30),
         NUMERO int
         )`).then(result => {
-        resposta({ resposta: 'TABELA CRIADA' });
+            console.log("TABELA TESTE CRIADA COM SUCESSO")
+       /* resposta({ resposta: 'TABELA CRIADA' });*/
     }).catch(erro => {
-        resposta({ resposta: erro });
+        console.log("TABELA TESTE COM ERRO NA CRIAÇÃO")
+        /*resposta({ resposta: erro });*/
     });
 });
 

@@ -61,7 +61,7 @@ db.serialize(() => {
 });
 
 function inserirRota(rota, funcao) {
-    route.use('/api/' + rota, (req, res) => {
+    route.post('/api' + rota, (req, res) => {
         function resposta(response) {
             res.json(response)
         }
